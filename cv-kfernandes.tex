@@ -1,0 +1,126 @@
+% !TeX program = pdflatex
+% Kim Fernandes's Curriculum Vitae
+% Email: Kimberly_fernandes@brown.edu
+
+\RequirePackage[l2tabu,orthodox]{nag}
+\documentclass[11pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ebgaramond}
+\usepackage{tgheros}
+\usepackage[USenglish]{babel}
+\usepackage[strict,autostyle]{csquotes}
+\usepackage[babel=true]{microtype}
+\usepackage{datetime}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{tabto}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\newcommand{\myname}{Kim Fernandes}
+\newcommand{\listtabwidth}{1.7cm}
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+\SetTracking{encoding=*, family=\sfdefault}{30}
+\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{30pt plus 4pt minus 4pt}{8pt plus 2pt minus 2pt}
+\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{16pt plus 4pt minus 4pt}{4pt plus 2pt minus 2pt}
+
+\geometry{body={6.5in, 9.0in},left=1.0in,top=1.0in}
+\setlength\parindent{0em}
+\setstretch{0.9}
+\newcommand{\listitemspace}{0.25em}
+\renewenvironment{itemize}{\begin{list}{}{\setlength{\leftmargin}{0em}\setlength{\parskip}{0em}\setlength{\itemsep}{\listitemspace}\setlength{\parsep}{\listitemspace}}}{\end{list}}
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,labelindent=0em,topsep=0em,partopsep=0em,itemsep=\listitemspace,parsep=\listitemspace,font=\normalfont}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+\hypersetup{colorlinks=true,urlcolor=black,citecolor=black,linkcolor=black,pdfauthor={\myname},pdfkeywords={},pdftitle={\myname: Curriculum Vitae},pdfsubject={Curriculum Vitae},pdfpagemode=UseNone}
+
+\begin{document}
+    \raggedright{}
+    \namefont{\myname}
+    \vspace{1em}
+    \begin{minipage}[t]{0.700\textwidth}
+        Department of Anthropology \\
+        Brown University
+    \end{minipage}
+    \begin{minipage}[t]{0.295\textwidth}
+        \raggedleft{}
+        \href{mailto:Kimberly_fernandes@brown.edu}{Kimberly\_fernandes@brown.edu}
+    \end{minipage}
+
+    \section*{Academic Appointments}
+    \begin{itemize}
+        \item Brown University Providence, RI\\
+        Assistant Professor, Department of Anthropology
+        \item University of Toronto Toronto, ON\\
+        Faculty of Information\\
+        Postdoctoral Fellow, 2024 –2025
+    \end{itemize}
+
+    \section*{Education}
+    \begin{itemize}
+        \item University of Pennsylvania Philadelphia, PA\\
+        School of Arts and Sciences, Graduate School of Education\\
+        Joint Doctor of Philosophy in Anthropology and Education with distinction, Spring 2024
+    \end{itemize}
+
+    \section*{Selected Publications}
+    \subsection*{Journal Articles}
+    \begin{itemize}
+        \item Fernandes, Kim. 2024. “Challenging Ableism: A Critical Turn Toward Disability Justice in HCI.” Co-authored with Cella M. Sum, Franchesca Spektor, Rahaf Alharbi, Leya Breanna Baltaxe-Admony, Erika Devine, Hazel Anneke Dixon, Jared Duval, Tessa Eagle, Frank Elavsky, Leandro S. Guedes, Serena Hillman, Vaishnav Kameswaran, Lynn Kirabo, Tamanna Motahar, Kathryn E. Ringland, Anastasia Schaadhardt, Laura Scheepmaker, and Alicia Williamson. XRDS Crossroads. 30 (4): 50 – 55.\newline\href{https://doi.org/10.1145/3665602}{https://doi.org/10.1145/3665602}
+        \item Fernandes, Kim. 2023. “For Graduate Students, When the Sadness is Unbelievable: How to Research and Write if We Must When the World is on Fire.” Article in “Crip Pandemic Life: A Tapestry,” special section of Lateral: Journal of the Cultural Studies Association. 12 (1). \href{https://doi.org/10.25158/L12.1.13}{https://doi.org/10.25158/L12.1.13}
+        \item Fernandes, Kim. 2022. “Inclusive Education in Practice: Disability, ‘Special Needs’, and the (Re)production of Normativity in Indian Childhoods.” Children’s Geographies. \href{https://doi.org/10.1080/14733285.2022.2124845}{https://doi.org/10.1080/14733285.2022.2124845} % chktex 36
+        \item Fernandes, Kimberly P. and Rabani Garg.\@ 2020. “Anxiety and the Politics of Child Well-Being During COVID-19.” NEOS: A Publication of the Anthropology of Children and Youth Interest Group % chktex 13
+    \end{itemize}
+    \subsection*{Other Peer-Reviewed Writing}
+    \begin{itemize}
+        \item Fernandes, Kim. 2024. “Pedagogies for a Particular Time.” Society for Cultural Anthropology Teaching Tools. June 6.
+        \item Fernandes, Kim. 2022. “Counting as Care: Disability in Ethnographic Praxis.” Society for Cultural Anthropology Fieldsights: Theorizing the Contemporary, Disability as Rupture. Edited by Michele Friedner and Matthew Wolf-Meyer. September 6.
+    \end{itemize}
+
+    \section*{Other Academic Affiliations}
+    \begin{itemize}
+        \item Affiliate, The DISCO Network 2025 - present % chktex 8
+        \item Affiliate, Data \& Society Research Institute 2023 – present
+        \item Affiliate, Center for Information, Technology and Public Life 2023 - present % chktex 8
+    \end{itemize}
+
+    \section*{Panels, Workshops and Roundtables Organized}
+    \begin{itemize}
+        \item Pre-Conference Symposium Co-Organizer (with Dr. Michele Friedner) \& Presenter. “South Asian Disability Futures.” Annual Conference on South Asia, October 2023.
+        \item Roundtable Co-Organizer. “Writing and Researching Disability in India.” Annual Conference on South Asia, October 2023.
+        \item Panel Co-Organizer \& Presenter. “Of the Body Politic, For the Body Politic: Counting Embodiment, Making Data.” Annual Conference on South Asia, October 2023.
+        \item Session Co-Organizer \& Presenter. “Creating Crip Care Networks in Academia.” American Association of Geographers Annual Meeting, March 2023.
+        \item Roundtable Participant. “Technologies from the South as Method and Challenge.” American Anthropological Association Annual Meeting, November 2023.
+    \end{itemize}
+
+    \section*{Selected Media and Public Scholarship}
+    \subsection*{Policy Reports}
+    \begin{itemize}
+        \item Digital Identity: Emerging Trends, Debates and Controversies. Co-authored with Dr. Eve Hayes deKalaf. Women in Identity. 2023.
+    \end{itemize}
+    \subsection*{Syllabi}
+    \begin{itemize}
+        \item A Primer on AI In/From the Majority World: An Empirical Site and a Standpoint. With Sareeta Amrute, Ranjit Singh, Rigoberto Lara Guzman, Aishatu Gwadabe, Dibyadyuti Roy, Murali Shanmugavelan, Nicolas Llano Linares, Paola Ricuarte Quijano, Soledad Magnone and Vasundhra Dahiya. 2022.
+    \end{itemize}
+    \subsection*{Public Scholarship}
+    \begin{itemize}
+        \item “The Statecraft of Digital IDs: An Annotated Bibliography.” With Ranjit Singh. Data and Society: Points. 2021.
+    \end{itemize}
+
+    \section*{Selected Committee Service}
+    \begin{itemize}
+        \item Accessibility, Diversity \& Inclusion Chair, ACM COMPASS Conference on Computing and Sustainable Societies 2025
+        \item LaborTech Annual Showcase Organizing Committee 2024
+        \item Steering Committee, Harvard Graduate Research on STS Conference 2021
+        \item Dean’s Committee on Race, Equity \& Inclusion, Graduate School of Education 2016 – 2019
+        \item International Student Advisory Board, International Student \& Scholar Services 2017 – 2021
+    \end{itemize}
+
+\end{document}
